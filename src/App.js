@@ -41,7 +41,8 @@ class App extends Component  {
     handleRemoveCart = (e, item) => {
         let cartItems = this.state.cartItems;
         cartItems.splice(item , 1)
-        this.setState({cartItems})
+        this.setState({cartItems});
+        localStorage.setItem("cartItems", JSON.stringify(cartItems))
     }
     handleChangeSort = (e) =>{
         this.setState({sort: e.target.value});
@@ -95,4 +96,4 @@ class App extends Component  {
 
 export default App;
 
-// json-server --watch db.json --port 8000
+// json-server db.json --port 8000

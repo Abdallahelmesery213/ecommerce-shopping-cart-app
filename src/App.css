@@ -2,7 +2,9 @@
     background-color: #243647;
     color: #fff;
 }
-
+.myApp h1{
+    margin-bottom: 10px;
+}
 .myProduct{
     background-color: #435163;
     padding-top: 20px;

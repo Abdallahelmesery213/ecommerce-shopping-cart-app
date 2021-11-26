@@ -4,7 +4,7 @@ export default function Basket(props) {
     const {cartItems,handleRemoveCart} = props;
     return (
         <div className="alert alert-info myBasket">
-            {cartItems.length === 0 ? "Basket is empty" : 
+            {cartItems.length === 0 ? <h6 className="text-danger text-center">Basket is empty</h6> : 
             <div>You have {cartItems.length} products</div>
             }
             {
